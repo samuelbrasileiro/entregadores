@@ -28,3 +28,10 @@ And: todos os campos estão vazios
 When: eu cadastrar o entregador “Lucas Morais”
 And: eu preencho os dados do aluno e não preencho o campo de email e telefone
 Then: eu lerei uma mensagem alegando que não posso fazer o cadastro de entregadores pois o perfil não pode ser validado.
+
+Cenário 3: Cadastro do entregador sem Nome
+Given: Eu estou na página “cadastro de entregadores” 
+And: todos os campos estão vazios
+When: eu cadastrar o entregador “Lucas Morais”
+And: eu preencho os dados do aluno e não preencho o campo de Nome
+Then: eu lerei uma mensagem alegando que não posso fazer o cadastro de entregadores.
