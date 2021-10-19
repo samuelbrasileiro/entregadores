@@ -1,0 +1,30 @@
+Feature: Entregador se remove do sistema:
+Cenário 1: Entregador remove seu perfil do sistema
+Given: Eu estou na página “home” 
+And: Estou logado no sistema
+When: eu vou na página “meu perfil” 
+And: eu vou na opção “apagar meu perfil”
+And: eu confirmo que desejo apagar meu perfil
+Then: eu lerei uma mensagem confirmando que meu perfil foi deletado.
+
+Cenário 2: Gestor remove entregadores do sistema
+Given: Eu estou na página “home” 
+And: Estou logado no sistema
+When: eu vou na página “meus entregadores” 
+And: eu vou na opção “apagar entregador X”
+And: eu confirmo que desejo apagar o entregador.
+Then: eu lerei uma mensagem confirmando que meu perfil foi deletado.
+
+Cenário 3: Cadastro do entregador sem CPF
+Given: Eu estou na página “cadastro de entregadores” 
+And: todos os campos estão vazios
+When: eu cadastrar o entregador “Lucas Morais”
+And: eu preencho os dados do aluno e não preencho o campo de CPF
+Then: eu lerei uma mensagem alegando que não posso fazer o cadastro de entregadores.
+
+Cenário 4: Cadastro do novo entregador sem email e sem número de telefone
+Given: Eu estou na página “cadastro de entregadores” 
+And: todos os campos estão vazios
+When: eu cadastrar o entregador “Lucas Morais”
+And: eu preencho os dados do aluno e não preencho o campo de email e telefone
+Then: eu lerei uma mensagem alegando que não posso fazer o cadastro de entregadores pois o perfil não pode ser validado.
