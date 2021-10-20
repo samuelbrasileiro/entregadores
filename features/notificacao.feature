@@ -34,3 +34,11 @@ And: Aperto o botão "Concluir entrega"
 Then: Recebo uma notificação que ganhei "7 reais"
 And: Retorno à página "Novas entregas"
 And: A entrega sumiu da lista da página "Novas entregas"
+
+Scenario: Entrega aceita por outro entregador
+Given: Estou na página "Novas entregas"
+And: Existe uma nova entrega do restaurante "Mc Donalds" para o endereço "Rua do Futuro, 5, apto 701" com o valor de lucro para o entregador de "7 Reais"
+When: Não rejeitei nem aceitei a entrega
+And: Outro usuário entregador aceitou essa entrega
+Then: Continuo na página "Novas entregas"
+And: Essa sugestão de nova entrega desaparece da lista
