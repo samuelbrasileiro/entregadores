@@ -33,3 +33,4 @@ And: O pedido é entregue ao cliente que solicitou o pedido
 And: Aperto o botão "Concluir entrega"
 Then: Recebo uma notificação que ganhei "7 reais"
 And: Retorno à página "Novas entregas"
+And: A entrega sumiu da lista da página "Novas entregas"
