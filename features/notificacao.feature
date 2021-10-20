@@ -42,3 +42,10 @@ When: Não rejeitei nem aceitei a entrega
 And: Outro usuário entregador aceitou essa entrega
 Then: Continuo na página "Novas entregas"
 And: Essa sugestão de nova entrega desaparece da lista
+
+Scenario: Recebendo notificação de nova entrega
+Given: Estou na página "Novas Entregas"
+And: A lista de novas entregas está vazia
+When: Surge no sistema uma nova entrega do restaurante "Mc Donalds" para o endereço "Rua do Futuro, 5, apto 701" com o valor de lucro para o entregador de "7 Reais"
+Then: Continuo na página "Novas Entregas"
+And: A lista de novas entregas é atualizada com esta nova entrega
