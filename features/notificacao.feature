@@ -36,6 +36,7 @@ And: Retorno à página "Novas entregas"
 
 Scenario: Recebendo notificação de nova entrega
 Given: Estou na página "Novas Entregas"
+And: Não existem novas entregas no sistema
 And: A lista de novas entregas está vazia
 When: Surge no sistema uma nova entrega do restaurante "Bugaloo" para o endereço "Rua Padre Roma, 209" com o valor de lucro para o entregador de "10 Reais"
 Then: Continuo na página "Novas Entregas"
