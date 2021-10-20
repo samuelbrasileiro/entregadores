@@ -37,6 +37,6 @@ And: Retorno à página "Novas entregas"
 Scenario: Recebendo notificação de nova entrega
 Given: Estou na página "Novas Entregas"
 And: A lista de novas entregas está vazia
-When: Surge no sistema uma nova entrega do restaurante "Mc Donalds" para o endereço "Rua do Futuro, 5, apto 701" com o valor de lucro para o entregador de "7 Reais"
+When: Surge no sistema uma nova entrega do restaurante "Bugaloo" para o endereço "Rua Padre Roma, 209" com o valor de lucro para o entregador de "10 Reais"
 Then: Continuo na página "Novas Entregas"
 And: A lista de novas entregas é atualizada com esta nova entrega
