@@ -13,13 +13,13 @@ When: Aperto o botão "Rejeitar Nova Entrega"
 Then: Essa sugestão de nova entrega desaparece da lista
 And: Continuo na página "Novas Entregas"
 
-Scenario: Atualizar status da entrega após recebimento de comida
+Scenario: Atualizar status da entrega após recebimento de pedido
 Given: Estou na página "Acompanhamento de entrega"
 And: A entrega do restaurante "Mc Donalds" para o endereço "Rua do Futuro, 5, apto 701" com o valor de lucro para o entregador de "7 Reais" foi aceita
 And: O endereço no app está para o restaurante "Mc Donalds"
 When: Alcanço o endereço do restaurante "Mc Donalds"
 And: O pedido é entregue para mim
-And: Aperto o botão "Confirmar recebimento de comida"
+And: Aperto o botão "Confirmar recebimento de pedido"
 Then: O endereço de entrega é atualizado para "Rua do Futuro, 5, apto 701"
 And: Continuo na página "Acompanhamento de entrega"
 
