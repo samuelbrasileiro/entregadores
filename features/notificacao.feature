@@ -33,3 +33,10 @@ And: O pedido é entregue ao cliente que solicitou o pedido
 And: Aperto o botão "Concluir entrega"
 Then: Recebo uma notificação que ganhei "7 reais"
 And: Retorno à página "Novas entregas"
+
+Scenario: Recebendo notificação de nova entrega
+Given: Estou na página "Novas Entregas"
+And: A lista de novas entregas está vazia
+When: Surge no sistema uma nova entrega do restaurante "Mc Donalds" para o endereço "Rua do Futuro, 5, apto 701" com o valor de lucro para o entregador de "7 Reais"
+Then: Continuo na página "Novas Entregas"
+And: A lista de novas entregas é atualizada com esta nova entrega
