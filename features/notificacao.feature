@@ -45,7 +45,7 @@ And: Essa sugestão de nova entrega desaparece da lista
 
 Scenario: Recebendo notificação de nova entrega
 Given: Estou na página "Novas Entregas"
-And: A lista de novas entregas está vazia
+And: A lista de novas entregas está com apenas uma entrega, a do restaurante "Zio" para o endereço "Av. José Osório, 202" com o valor de lucro para o entregador de "4 Reais"
 When: Surge no sistema uma nova entrega do restaurante "Mc Donalds" para o endereço "Rua do Futuro, 5, apto 701" com o valor de lucro para o entregador de "7 Reais"
 Then: Continuo na página "Novas Entregas"
-And: A lista de novas entregas é atualizada com esta nova entrega
+And: A lista de novas entregas é atualizada, agora com "2" entregas, a do restaurante "Zio" e a do "Mc Donalds"
